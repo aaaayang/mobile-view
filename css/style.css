@@ -70,3 +70,25 @@ footer{
     text-align: center;
     border: solid 10px black;
 } 
+
+a.skip{
+    background: blue;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: left 1s ease-out;
+    z-index: 1;
+    position: absolute;
+    left: -100px;
+    top: -300px;
+  }
+
+  nav a:focus{
+    border-top: yellow solid 10px;
+  }
+
+  /* styles for mobile devices */
+@media only screen and (max-width: 768px) {
+    body {
+        background-image: url("../images/pattern-07.jpg");
+    }
+  }
