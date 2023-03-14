@@ -9,28 +9,37 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
 
-  <!-- connect to a Google font -->  
+  <!-- connect to a Google font --> 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+
   <!-- connect to a Font Aweseom font -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- connect to a favicon -->
 
   <title>Women's Web</title>
 </head>
 
 <body>
-  <a class="skip-to-content-link" href="#main">Skip to content</a>
+  <a class="skip" href="#main">Skip to content</a>
   <header>
     <nav>
+      <form id="form" role="search">
+        <input type="search" id="query" name="q"
+         placeholder="Search..."
+         aria-label="Search through site content">
+        <button>Search</button>
+      </form>
         <ul>
-          <li><a href="index.html">About</a></li>
+          <li><a class = "active" href="index.html">About</a></li>
           <li><a href="literature.html">Literature</a></li>
           <li><a href="history.html">History and Politics</a></li>
-          <li><a class="active" href="femdict.html">Feminist Dictionary</a></li>
+          <li><a href="femdict.html">Feminist Dictionary</a></li>
         </ul>
     </nav>
     <h1> Woman's Web </h1>
   </header>
 
-  <main>
+  <main id="main">
     <img src="images/women_march_pano.jpg" width="200" alt="Image of the Ann Arbor Women's March">
 
     <div>
@@ -42,20 +51,20 @@
       </p>
     </div>
 
-      Literature
-      <div>
+      <div class="literature">
+        <h2><i class="fa fa-align-justify"></i>Literature</h2>	
         <p>
           This page features books written by women and for women, books and essays about feminism, poems, plays, and bios of female writers.
         </p>
       </div>
-      History / Politics
-      <div>
+      <div class="history">
+        <h2><i class="fa fa-train"></i>History / Politics</h2>
         <p>
           This page features bios of important women in history and women currently in Congress or otherwise politically involved.
         </p>
       </div>
-      Feminist Dictionary
-      <div>
+      <div class="femdic">
+        <h2><i class="fa fa-venus"></i>Feminist Dictionary</h2>
         <p>
           This page features a collection of important feminist terminology that might make reading easier. These will include formal definitions and my own understandings of the terms.
         </p>

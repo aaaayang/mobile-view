@@ -11,19 +11,27 @@
 
   <!-- connect to a Google font -->  
   <!-- connect to a Font Aweseom font -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- connect to a favicon -->
 
   <title>Women's Web - Literature</title>
 </head>
 
 <body>
+  <a class="skip" href="#main">Skip to content</a>
   <header>
     <nav>
+      <form id="form" role="search">
+        <input type="search" id="query" name="q"
+         placeholder="Search..."
+         aria-label="Search through site content">
+        <button>Search</button>
+      </form>
         <ul>
           <li><a href="index.html">About</a></li>
-          <li><a href="literature.html">Literature</a></li>
+          <li><a class="active" href="literature.html">Literature</a></li>
           <li><a href="history.html">History and Politics</a></li>
-          <li><a class="active" href="femdict.html">Feminist Dictionary</a></li>
+          <li><a href="femdict.html">Feminist Dictionary</a></li>
         </ul>
     </nav>
       <!-- definitions from meriam webster -->
@@ -36,7 +44,7 @@
     <h1>Feminist Literature</h1>
   </header>
 
-  <main>
+  <main id="main">
 
       <div>
       bell hooks
